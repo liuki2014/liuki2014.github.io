@@ -70,13 +70,10 @@
           var timeout, t = 1000, hasApp = true; 
           setTimeout(function () { 
             if (!hasApp) { 
-                //没有安装支付宝
-                var r = confirm("您没有安装支付宝，请先安装支付宝!");
-                if ( r== true){
-                    location.href="http://www.alipay.com/"
+                  location.href="https://play.google.com/store/apps/details?id=com.threesome.swingers.threefun&referrer=xxxxx"
                 }
             }else{
-                //安装支付宝
+                location.href="intent://p?d=0100202024e00020000a0492&k=24bb62d59e311a78f76a957d64b332b3f550203c#Intent;scheme=go3fun2;package=com.threesome.swingers.threefun;end"
             }
             document.body.removeChild(ifr); 
           }, 2000) 
