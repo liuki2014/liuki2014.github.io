@@ -1,27 +1,219 @@
 
-<html><head>
-    <link rel="icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.png" type="image/png" />
-    <link rel="icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.png" type="image/png" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="deepview-service" content="deepview-service" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css" />
+    <style>
+        body,html {margin:0; height:100%;}
+        body {
+            word-wrap: break-word;
+            font-family: Arial!important;
+        }
+        /* ============ Portrait ============ */
+        .form-get-the-app > input {
+            margin-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #FFFFFF;
+            border: 1px solid #979797;
+            border-radius: 2px;
+            font-size: 60px;
+            color: #CECECE;
+            line-height: 24px;
+            padding-left: 20px;
+        }
+        .cta-button {
+            width: 13rem;
+            display:block;
+            height: 50px;
+            line-height:50px;
+            background-color: #DF0046;
+            border-radius: 32px;
+            font-size: 1.2rem;
+            padding:0 20px;
+            color: #FFFFFF;
+            text-align: center;
+            text-decoration: none;
+        }
+        @media only screen and (min-width: 200px) {
+            html {
+                font-size: 18px !important;
+            }
+        }
+        @media only screen and (min-width: 360px) {
+            html {
+                font-size: 20px !important;
+            }
+        }
+        @media only screen and (min-width: 400px) {
+            html {
+                font-size: 21.33px !important;
+            }
+        }
+        @media only screen and (min-width: 414px) {
+            html {
+                font-size: 22.08px !important;
+            }
+        }
+        @media only screen and (min-width: 480px) {
+            html {
+                font-size: 25.6px !important;
+            }
+        }
+        @media screen and (max-width: 280px) {
+            .content {
+                padding-top: 1rem!important;
+                font-size: 1.2rem!important;
+                line-height: 1.6rem!important;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .cta-button {
+                width: 8.6rem!important;
+                height: 40px!important;
+                line-height: 40px!important;
+                font-size: 1rem!important;
+            }
+        }
+        @media screen and (max-width: 460px) {
+            .logo img {
+                width: 6rem!important;
+            }
+            .cta-button {
+                width: 8.8rem!important;
+                height: 45px!important;
+                line-height: 45px!important;
+                font-size: 1rem!important;
+            }
+            .content {
+                padding-top: 1rem!important;
+                font-size: 1.2rem!important;
+                line-height: 1.6rem!important;
+            }
+        }
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            .logo img {
+                width: 6rem!important;
+            }
+            .content {
+                padding-top: 1rem!important;
+                font-size: 1.2rem!important;
+                line-height: 1.6rem!important;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .logo img {
+                width: 6rem!important;
+            }
+            .cta-button {
+                width: 18rem!important;
+                height: 75px!important;
+                line-height: 75px!important;
+                font-size: 1.5rem!important;
+            }
+            .content {
+                padding-top: 3rem!important;
+                font-size: 2.5rem!important;
+                line-height: 2.9rem!important;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            .logo img {
+                width: 8rem!important;
+            }
+            .content {
+                padding-top: 1rem!important;
+                font-size: 1.2rem!important;
+                line-height: 1.6rem!important;
+            }
+        }
+        @media (min-width: 1200px) {
+            .logo img {
+                width: 9rem!important;
+            }
+            .content {
+                padding-top: 2rem!important;
+                font-size: 2rem!important;
+                line-height: 2rem!important;
+            }
+        }
+        @media only screen
+        and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: portrait) {
+            .logo img {
+                width: 6rem!important;
+            }
+            .cta-button {
+                width: 18rem!important;
+                height: 75px!important;
+                line-height: 75px!important;
+                font-size: 1.5rem!important;
+            }
+            .content {
+                padding-top: 3rem!important;
+                font-size: 2.5rem!important;
+                line-height: 2.9rem!important;
+            }
+        }
+        .card-box {
+            height: 100%;
+        }
+        .bg-box {
+            text-align: center;
+            height: 85%;
+            background: url("https://static.go3fun.co/images/dp-bg-link.png") no-repeat center 0;
+            background-position: center 0;
+            background-size: cover;
+        }
+        .btn-box {
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .bg-box {
+            /*min-height: 736px;*/
+        }
+        .logo {
+            box-sizing: border-box;
+            padding-top: 1.8rem;
+        }
+        .logo img {
+            width: 10rem;
+        }
+        .content {
+            box-sizing: border-box;
+            width: 90%;
+            padding-top: 2rem;
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-family: Arial;
+            line-height:2rem;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <script type="text/javascript">
-      // 3e8308c71544fc0e9cebe1017e037254
-      // fe9071b962c1a35b11cbf3b25fbc1b3b
-var full_package_name = 'com.threesome.swingers.threefun';
-var full_package_name_len = full_package_name.length;
-var index_of_last_dash = full_package_name.lastIndexOf('-');
-var package_name = index_of_last_dash < 0 ? full_package_name : full_package_name.slice(0,index_of_last_dash);
-var app_link = 'go3fun://?af_deeplink=true&af_dp=go3fun%3A%2F%2F&af_force_deeplink=true&af_reengagement_window=30d&af_xp=referral&campaign=None&deep_link_sub1=hello8hfu4hf7&deep_link_value=test98726545544668&is_retargeting=true&media_source=Test_Link2&shortlink=nc9phhm4&source_caller=ui&test=45dfdsfsdffdsfsf';
-var store_link = 'market://details?id=com.threesome.swingers.threefun&referrer=af_tranid%3DJn5vSvGRV1mellGMht25zw%26af_dp%3Dgo3fun%253A%252F%252F%26deep_link_sub1%3Dhello8hfu4hf7%26pid%3DTest_Link2%26deep_link_value%3Dtest98726545544668';
-var referrer = 'af_tranid%3DJn5vSvGRV1mellGMht25zw%26af_dp%3Dgo3fun%253A%252F%252F%26deep_link_sub1%3Dhello8hfu4hf7%26pid%3DTest_Link2%26deep_link_value%3Dtest98726545544668';
-var store_link_encoded = encodeURI(store_link);
-var parts = app_link.split('://');
-var scheme = parts.shift();
-var data   = parts.join('://');
-var appsflyer_click_ts = Date.now();
-var intentUrl = 'intent://open?_branch_referrer=H4sIAAAAAAAAA22NywqDMBBFv6Zd1jyI1IIUShW6KN10H%2BIYNWgejMn%2FN3XhonQzXO45l5liDOulKEbPh%2BROKoTTYtxcNG%2FdNtQ%2FTdtdZYfKwSStivmavqaUk4oQSsuzIIxVgosj6kEjaqy%2FcwmLgTmrByb4%2FY%2Bee1amaOXqE4LetNv25fHaGSgblBndRnNCBeCTi7tgdW%2BS%2FcUfKFGLa9MAAAA%3D&link_click_id=1130900116850229535#Intent;scheme=go3fun;package=com.threesome.swingers.threefun;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.threesome.swingers.threefun&referrer=link_click_id%253D1130900116850229535%2526utm_source%253DBranchIO%2526utm_campaign%253Dpairaccount%2526utm_medium%253Dpairaccount;S.market_referrer=link_click_id%3D1130900116850229535%26utm_source%3DBranchIO%26utm_campaign%3Dpairaccount%26utm_medium%3Dpairaccount&__branch_flow_type%3Dviewapp%26__branch_flow_id%3D1289104279694533189%26__branch_mobile_deepview_type%3D1%26_branch_match_id%3D1130900116850229535%26referrer%3Dlink_click_id%253D1130900116850229535%2526utm_source%253DBranchIO%2526utm_campaign%253Dpairaccount%2526utm_medium%253Dpairaccount%26_t%3D1130900116850229535;B.branch_intent=true;end';
-location.href = intentUrl;
-    </script>
-</body>
+<div class="card-box">
+    <div class="bg-box">
+        <div class="logo"><img src="https://static.go3fun.co/images/dp-logo-link.png" /></div>
+        <div class="content">Meet Open-minded Hot Singles and Couples Nearby!</div>
+    </div>
+    <div class="btn-box">
+        <a href="https://go3fun-alternate.app.link/ETeFE1oMiFb?__branch_flow_type=viewapp&__branch_flow_id=1289104279694533189&__branch_mobile_deepview_type=1&_branch_match_id=1130900116850229535&referrer=link_click_id%253D1130900116850229535%2526utm_source%253DBranchIO%2526utm_campaign%253Dpairaccount%2526utm_medium%253Dpairaccount&_t=1130900116850229535" class="cta-button text-light cta-button--no-app-icon">Open & Link</a>
+    </div>
+</div>
+<script type="text/javascript">
+function validateProtocol(url){
+   var parser = document.createElement("a");
+   parser.href = url; 
+   var protocol = parser.protocol.toLowerCase();
+   if ([ "javascript:", "vbscript:", "data:", "ftp:", ":", " "].indexOf(protocol) < 0) {
+      return url;}
+   return null;
+}
+window.onload = function() {window.top.location = validateProtocol("go3fun://open?_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT883TivN00ssKNDLyczL1ncNSXVzNcz3zXRLAgDVaDO4IwAAAA%3D%3D&link_click_id=1130900116850229535");};</script></body>
 </html>
