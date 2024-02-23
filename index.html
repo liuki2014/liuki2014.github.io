@@ -1,62 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <title>判断手机是否安装支付宝</title>
-    </head>
-    <body>
-    <a href="intent://?af_deeplink=true&af_dp=go3fun%3A%2F%2F&af_force_deeplink=true&af_reengagement_window=30d&af_xp=referral&campaign=None&deep_link_sub1=hello8hfu4hf7&deep_link_value=test98726545544668&is_retargeting=true&media_source=Test_Link2&shortlink=nc9phhm4&source_caller=ui&test=45dfdsfsdffdsfsf#Intent;scheme=go3fun;package=com.threesome.swingers.threefun;S.browser_fallback_url=market://details?id=com.threesome.swingers.threefun&referrer=af_tranid%253Dek5-wUViKHPD-WiUCOQO-g%2526af_dp%253Dgo3fun%25253A%25252F%25252F%2526deep_link_sub1%253Dhello8hfu4hf7%2526pid%253DTest_Link2%2526deep_link_value%253Dtest98726545544668;S.market_referrer=af_tranid%3Dek5-wUViKHPD-WiUCOQO-g%26af_dp%3Dgo3fun%253A%252F%252F%26deep_link_sub1%3Dhello8hfu4hf7%26pid%3DTest_Link2%26deep_link_value%3Dtest98726545544668;l.appsflyer_click_ts=1708654869050;end')" class="dl-btn" id="download">打开3Fun</a> 
-    <script>
-    function testApp(url) {
-          var timeout, t = 1000, hasApp = true; 
-          setTimeout(function () { 
-            if (!hasApp) { 
-                //没有安装支付宝
-                var r = confirm("跳转play store 安装3Fun");
-                if ( r== true){
-                    location.href="https://play.google.com/store/apps/details?id=com.threesome.swingers.threefun&referrer=xxxxx"
-                }
-            }else{
-                //安装支付宝
-                location.href="intent://p?d=0100202024e00020000a0492&k=24bb62d59e311a78f76a957d64b332b3f550203c#Intent;scheme=go3fun2;package=com.threesome.swingers.threefun;end"
-            }
-            document.body.removeChild(ifr); 
-          }, 2000) 
-          
-          var t1 = Date.now(); 
-          var ifr = document.createElement("iframe"); 
-          ifr.setAttribute('src', url); 
-          ifr.setAttribute('style', 'display:none'); 
-          document.body.appendChild(ifr); 
-          timeout = setTimeout(function () { 
-             var t2 = Date.now(); 
-             if (!t1 || t2 - t1 < t + 100) { 
-               hasApp = false; 
-             } 
-          }, t); 
-        } 
-        //判断访问终端
-        var browser={
-            versions:function(){
-                var u = navigator.userAgent, app = navigator.appVersion;
-                return {
-                    trident: u.indexOf('Trident') > -1, //IE内核
-                    presto: u.indexOf('Presto') > -1, //opera内核
-                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
-                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-                    iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
-                    iPad: u.indexOf('iPad') > -1, //是否iPad
-                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
-                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
-                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
-                };
-            }(),
-            language:(navigator.browserLanguage || navigator.language).toLowerCase()
-        }
+
+<html><head>
+    <link rel="icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.png" type="image/png" />
+    <link rel="icon" href="https://cdn.appsflyer.com/af-statics/images/favicon.png" type="image/png" />
+</head>
+<body>
+    <script type="text/javascript">
+      // 3e8308c71544fc0e9cebe1017e037254
+      // fe9071b962c1a35b11cbf3b25fbc1b3b
+var full_package_name = 'com.threesome.swingers.threefun';
+var full_package_name_len = full_package_name.length;
+var index_of_last_dash = full_package_name.lastIndexOf('-');
+var package_name = index_of_last_dash < 0 ? full_package_name : full_package_name.slice(0,index_of_last_dash);
+var app_link = 'go3fun://?af_deeplink=true&af_dp=go3fun%3A%2F%2F&af_force_deeplink=true&af_reengagement_window=30d&af_xp=referral&campaign=None&deep_link_sub1=hello8hfu4hf7&deep_link_value=test98726545544668&is_retargeting=true&media_source=Test_Link2&shortlink=nc9phhm4&source_caller=ui&test=45dfdsfsdffdsfsf';
+var store_link = 'market://details?id=com.threesome.swingers.threefun&referrer=af_tranid%3DJn5vSvGRV1mellGMht25zw%26af_dp%3Dgo3fun%253A%252F%252F%26deep_link_sub1%3Dhello8hfu4hf7%26pid%3DTest_Link2%26deep_link_value%3Dtest98726545544668';
+var referrer = 'af_tranid%3DJn5vSvGRV1mellGMht25zw%26af_dp%3Dgo3fun%253A%252F%252F%26deep_link_sub1%3Dhello8hfu4hf7%26pid%3DTest_Link2%26deep_link_value%3Dtest98726545544668';
+var store_link_encoded = encodeURI(store_link);
+var parts = app_link.split('://');
+var scheme = parts.shift();
+var data   = parts.join('://');
+var appsflyer_click_ts = Date.now();
+var intentUrl = 'intent://' + data + '#Intent;scheme=' + scheme + ';package=' + package_name + ';S.browser_fallback_url=' + store_link_encoded + ";S.market_referrer=" + referrer + ';l.appsflyer_click_ts=' + appsflyer_click_ts + ';end';
+location.href = intentUrl;
     </script>
-    </body>
+</body>
 </html>
