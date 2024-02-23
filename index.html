@@ -197,6 +197,7 @@
     </style>
 </head>
 <body>
+var hasApp = false
 <div class="card-box">
     <div class="bg-box">
         <div class="logo"><img src="https://static.go3fun.co/images/dp-logo-link.png" /></div>
@@ -212,6 +213,7 @@ function validateProtocol(url){
    parser.href = url; 
    var protocol = parser.protocol.toLowerCase();
    if ([ "javascript:", "vbscript:", "data:", "ftp:", ":", " "].indexOf(protocol) < 0) {
+      alert("Hello!");
       return url;}
    return null;
 }
